@@ -21,6 +21,8 @@ $.Zoomable.prototype.bindEvents = function () {
   }.bind(this));
 };
 
+// Adjust xDiff, yDiff by half of side of boxSize 
+
 $.Zoomable.prototype.showZoom = function (xDiff, yDiff) {
   if (!this.$zoomedImage) {
     this.$zoomedImage = $('<div>').addClass('zoomed-image').appendTo('body');
